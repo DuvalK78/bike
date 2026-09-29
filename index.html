@@ -1,0 +1,1313 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mon Garage Virtuel — Motos Passion</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- En-tête / Hero Section -->
+  <header class="hero">
+    <h1>Mon Garage Virtuel</h1>
+    <p>Une collection personnelle des modèles d'exception</p>
+  </header>
+
+  <!-- Barre de recherche, filtres et compteurs -->
+<section class="controls-container">
+  
+  <!-- Recherche et filtres -->
+  <div class="search-and-filters">
+  <input type="text" id="search-input" placeholder="Rechercher un modèle ou une marque...">
+  
+  <select id="brand-select">
+    <option value="all">Toutes les marques</option>
+    <option value="aprilia">Aprilia</option>
+    <option value="bmw">BMW</option>
+    <option value="ducati">Ducati</option>
+    <option value="honda">Honda</option>
+    <option value="kawasaki">Kawasaki</option>
+    <option value="suzuki">Suzuki</option>
+    <option value="yamaha">Yamaha</option>
+  </select>
+
+  <!-- Bouton de réinitialisation -->
+  <button id="reset-filters-btn" class="reset-btn">Réinitialiser</button>
+</div>
+
+  <!-- Boutons de catégories -->
+  <nav class="filters">
+    <button class="filter-btn active" data-category="all">Toutes</button>
+    <button class="filter-btn" data-category="sportive">Sportives</button>
+    <button class="filter-btn" data-category="roadster">Roadsters</button>
+    <button class="filter-btn" data-category="adventure">Adventure / Trail</button>
+    <button class="filter-btn" data-category="sportgt">Sport GT</button>
+  </nav>
+
+  <!-- Compteurs dynamiques -->
+  <div class="stats-bar">
+    <div class="stat-item">Motos affichées : <strong id="count-total">0</strong></div>
+    <div class="stat-item">Sportives : <strong id="count-sportive">0</strong></div>
+    <div class="stat-item">Roadsters : <strong id="count-roadster">0</strong></div>
+    <div class="stat-item">Adventure / Trail : <strong id="count-adventure">0</strong></div>
+    <div class="stat-item">Sport GT : <strong id="count-sportgt">0</strong></div>
+    <div class="stat-item">Aprilia : <strong id="count-aprilia">0</strong></div>
+    <div class="stat-item">BMW : <strong id="count-bmw">0</strong></div>
+    <div class="stat-item">Ducati : <strong id="count-ducati">0</strong></div>
+    <div class="stat-item">Honda : <strong id="count-honda">0</strong></div>
+    <div class="stat-item">Kawasaki : <strong id="count-kawasaki">0</strong></div>
+    <div class="stat-item">Suzuki : <strong id="count-suzuki">0</strong></div>
+    <div class="stat-item">Yamaha : <strong id="count-yamaha">0</strong></div>
+  </div>
+
+</section>
+
+  <!-- Grille des motos -->
+  <main class="container">
+    <section class="grid" id="moto-grid">
+
+      <!-- Carte Moto -->
+      <article class="card" data-category="sportive" data-brand="aprilia">
+        <div class="card-image">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/0/07/2026_Aprilia_RSV4_1100.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original" alt="Nom de la moto">
+          <span class="badge">Sportive</span>
+        </div>
+        <div class="card-content">
+          <h2>RSV4 1100</h2>
+          <p class="brand">Aprilia — 2025</p>
+          <ul class="specs">
+            <li><strong>Puissance :</strong> 220 ch</li>
+            <li><strong>Puissance :</strong> 161.6 kW</li>
+            <li><strong>Cylindrée :</strong> 1099 cc</li>
+            <li><strong>Couple :</strong> 127 Nm</li>
+            <li><strong>Poids :</strong> 204 kg</li>
+            <li><strong>Rapport Poids/Puissance :</strong> 0.92 kg/ch</li>
+            <li><strong>Moteur :</strong> 4 cylindres en V à 65°</li>
+            <li><strong>Réservoir :</strong> 18 L</li>
+            <li><strong>Selle :</strong> 840 mm</li>
+            <li><strong>Longueur :</strong> 2055 mm</li>
+            <li><strong>largeur :</strong> 735 mm</li>
+            <li><strong>Hauteur :</strong> ? mm</li>
+            <li><strong>Roue av/ar :</strong> 120/70-17 200/55-17</li>
+          </ul>
+          <!--<p class="description">Courte description ou avis personnel sur la moto...</p>-->
+        </div>
+      </article>
+
+      <!-- Carte Moto -->
+      <article class="card" data-category="sportive" data-brand="aprilia">
+        <div class="card-image">
+          <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Aprilia_RS_660_2025.jpg/1920px-Aprilia_RS_660_2025.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail" alt="Nom de la moto">
+          <span class="badge">Sportive</span>
+        </div>
+        <div class="card-content">
+          <h2>RS 660</h2>
+          <p class="brand">Aprilia — 2026</p>
+          <ul class="specs">
+            <li><strong>Puissance :</strong> 105 ch</li>
+            <li><strong>Puissance :</strong> 77.2 kW</li>
+            <li><strong>Cylindrée :</strong> 659 cc</li>
+            <li><strong>Couple :</strong> 70 Nm</li>
+            <li><strong>Poids :</strong> 183 kg</li>
+            <li><strong>Rapport Poids/Puissance :</strong> 1.74 kg/ch</li>
+            <li><strong>Moteur :</strong> Bicylindres en ligne à 270°</li>
+            <li><strong>Réservoir :</strong> 15 L</li>
+            <li><strong>Selle :</strong> 820 mm</li>
+            <li><strong>Longueur :</strong> 1995 mm</li>
+            <li><strong>largeur :</strong> 745 mm</li>
+            <li><strong>Hauteur :</strong> ? mm</li>
+            <li><strong>Roue av/ar :</strong> 120/70-17 180/55-17</li>
+          </ul>
+          <!--<p class="description">Courte description ou avis personnel sur la moto...</p>-->
+        </div>
+      </article>
+
+      <!-- Carte Moto -->
+      <article class="card" data-category="sportive" data-brand="bmw">
+        <div class="card-image">
+          <img src="https://www.motoplanete.com/bmw/galerie/BMW-S-1000-RR-2025/16.webp" alt="Nom de la moto">
+          <span class="badge">Sportive</span>
+        </div>
+        <div class="card-content">
+          <h2>S1000RR</h2>
+          <p class="brand">BMW — 2026</p>
+          <ul class="specs">
+            <li><strong>Puissance :</strong> 210 ch</li>
+            <li><strong>Puissance :</strong> 154 kW</li>
+            <li><strong>Cylindrée :</strong> 999 cc</li>
+            <li><strong>Couple :</strong> 113 Nm</li>
+            <li><strong>Poids :</strong> 198 kg</li>
+            <li><strong>Rapport Poids/Puissance :</strong> 0.94 kg/ch</li>
+            <li><strong>Moteur :</strong> 4 cylindres en ligne</li>
+            <li><strong>Réservoir :</strong> 16.5 L</li>
+            <li><strong>Selle :</strong> 832 mm</li>
+            <li><strong>Longueur :</strong> 2073 mm</li>
+            <li><strong>largeur :</strong> 848 mm</li>
+            <li><strong>Hauteur :</strong> 1205 mm</li>
+            <li><strong>Roue av/ar :</strong> 120/70-17 190/55-17</li>
+          </ul>
+          <!--<p class="description">Courte description ou avis personnel sur la moto...</p>-->
+        </div>
+      </article>
+
+      <!-- Carte Moto -->
+      <article class="card" data-category="sportive" data-brand="bmw">
+        <div class="card-image">
+          <img src="https://www.motoplanete.com/bmw/zoom-700px/10904-M-1000-RR-2025-700px.webp" alt="Nom de la moto">
+          <span class="badge">Sportive</span>
+        </div>
+        <div class="card-content">
+          <h2>M1000RR</h2>
+          <p class="brand">BMW — 2026</p>
+          <ul class="specs">
+            <li><strong>Puissance :</strong> 218 ch</li>
+            <li><strong>Puissance :</strong> 160 kW</li>
+            <li><strong>Cylindrée :</strong> 999 cc</li>
+            <li><strong>Couple :</strong> 113 Nm</li>
+            <li><strong>Poids :</strong> 194 kg</li>
+            <li><strong>Rapport Poids/Puissance :</strong> 0.88 kg/ch</li>
+            <li><strong>Moteur :</strong> 4 cylindres en ligne</li>
+            <li><strong>Réservoir :</strong> 16.5 L</li>
+            <li><strong>Selle :</strong> 865 mm</li>
+            <li><strong>Longueur :</strong> 2085 mm</li>
+            <li><strong>largeur :</strong> 899 mm</li>
+            <li><strong>Hauteur :</strong> 1228 mm</li>
+            <li><strong>Roue av/ar :</strong> 120/70-17 200/55-17</li>
+          </ul>
+          <!--<p class="description">Courte description ou avis personnel sur la moto...</p>-->
+        </div>
+      </article>
+
+      <!-- Carte Moto -->
+      <article class="card" data-category="sportive" data-brand="ducati">
+        <div class="card-image">
+          <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Ducati_Panigale_V4_S_Corse.jpg/1920px-Ducati_Panigale_V4_S_Corse.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail" alt="Nom de la moto">
+          <span class="badge">Sportive</span>
+        </div>
+        <div class="card-content">
+          <h2>Panigale V4</h2>
+          <p class="brand">Ducati — 2025</p>
+          <ul class="specs">
+            <li><strong>Puissance :</strong> 216 ch</li>
+            <li><strong>Puissance :</strong> 158.9 kW</li>
+            <li><strong>Cylindrée :</strong> 1103 cc</li>
+            <li><strong>Couple :</strong> 120.9 Nm</li>
+            <li><strong>Poids :</strong> 191 kg</li>
+            <li><strong>Rapport Poids/Puissance :</strong> 0.88 kg/ch</li>
+            <li><strong>Moteur :</strong> 4 cylindres en V à 90°</li>
+            <li><strong>Réservoir :</strong> 17 L</li>
+            <li><strong>Selle :</strong> 850 mm</li>
+            <li><strong>Longueur :</strong> ? mm</li>
+            <li><strong>largeur :</strong> ? mm</li>
+            <li><strong>Hauteur :</strong> ? mm</li>
+            <li><strong>Roue av/ar :</strong> 120/70-17 200/60-17</li>
+          </ul>
+          <!--<p class="description">Courte description ou avis personnel sur la moto...</p>-->
+        </div>
+      </article>
+
+      <!-- Carte Moto -->
+      <article class="card" data-category="sportive" data-brand="ducati">
+        <div class="card-image">
+          <img src="https://images.ctfassets.net/x7j9qwvpvr5s/6e4HNbLulmoTsXZ6cWBnNh/1bf9d3ef8b3fc220ecab98b22a41a339/2025-09-19_Panigale-V4-R-MY25-360_0019_it-18.png?w=1920&fm=webp&q=95" alt="Nom de la moto">
+          <span class="badge">Sportive</span>
+        </div>
+        <div class="card-content">
+          <h2>Panigale V4R</h2>
+          <p class="brand">Ducati — 2026</p>
+          <ul class="specs">
+            <li><strong>Puissance :</strong> 218 ch</li>
+            <li><strong>Puissance :</strong> 160.3 kW</li>
+            <li><strong>Cylindrée :</strong> 998 cc</li>
+            <li><strong>Couple :</strong> 114.5 Nm</li>
+            <li><strong>Poids :</strong> 186.5 kg</li>
+            <li><strong>Rapport Poids/Puissance :</strong> 0.85 kg/ch</li>
+            <li><strong>Moteur :</strong> 4 cylindres en V à 90°</li>
+            <li><strong>Réservoir :</strong> 17 L</li>
+            <li><strong>Selle :</strong> 855 mm</li>
+            <li><strong>Longueur :</strong> ? mm</li>
+            <li><strong>largeur :</strong> ? mm</li>
+            <li><strong>Hauteur :</strong> ? mm</li>
+            <li><strong>Roue av/ar :</strong> 120/70-17 200/60-17</li>
+          </ul>
+          <!--<p class="description">Courte description ou avis personnel sur la moto...</p>-->
+        </div>
+      </article>
+
+      <!-- Carte Moto -->
+      <article class="card" data-category="sportive" data-brand="ducati">
+        <div class="card-image">
+          <img src="https://images.ctfassets.net/x7j9qwvpvr5s/6EIHECnvJVMWUdHPP9MWqc/4d7c0840fc5253c0a399be0947c9ac9f/Panigale-V2-MY25-360_0019_it.png?w=1920&fm=webp&q=95" alt="Nom de la moto">
+          <span class="badge">Sportive</span>
+        </div>
+        <div class="card-content">
+          <h2>Panigale V2</h2>
+          <p class="brand">Ducati — 2025</p>
+          <ul class="specs">
+            <li><strong>Puissance :</strong> 120 ch</li>
+            <li><strong>Puissance :</strong> 88 kW</li>
+            <li><strong>Cylindrée :</strong> 890 cc</li>
+            <li><strong>Couple :</strong> 93.3 Nm</li>
+            <li><strong>Poids :</strong> 179 kg</li>
+            <li><strong>Rapport Poids/Puissance :</strong> 1.49 kg/ch</li>
+            <li><strong>Moteur :</strong> Bicylindres en V à 90°</li>
+            <li><strong>Réservoir :</strong> 15 L</li>
+            <li><strong>Selle :</strong> 837 mm</li>
+            <li><strong>Longueur :</strong> 2070 mm</li>
+            <li><strong>largeur :</strong> 745 mm</li>
+            <li><strong>Hauteur :</strong> ? mm</li>
+            <li><strong>Roue av/ar :</strong> 120/70-17 190/55-17</li>
+          </ul>
+          <!--<p class="description">Courte description ou avis personnel sur la moto...</p>-->
+        </div>
+      </article>
+
+      <!-- Carte Moto -->
+      <article class="card" data-category="sportive" data-brand="honda">
+        <div class="card-image">
+          <img src="https://moto.honda.fr/content/dam/central/motorcycles/supersports/cbr1000rr-rr-fireblade-2024/overview/gallery/honda-cbr1000rr-r-gallery-1728x972-desktop1.jpg/jcr:content/renditions/fb_r.jpg" alt="Nom de la moto">
+          <span class="badge">Sportive</span>
+        </div>
+        <div class="card-content">
+          <h2>CBR1000RR-R Fireblade SP</h2>
+          <p class="brand">Honda — 2026</p>
+          <ul class="specs">
+            <li><strong>Puissance :</strong> 217 ch</li>
+            <li><strong>Puissance :</strong> 160 kW</li>
+            <li><strong>Cylindrée :</strong> 999.9 cc</li>
+            <li><strong>Couple :</strong> 113 Nm</li>
+            <li><strong>Poids :</strong> 201 kg</li>
+            <li><strong>Rapport Poids/Puissance :</strong> 0.92 kg/ch</li>
+            <li><strong>Moteur :</strong> 4 cylindres en ligne</li>
+            <li><strong>Réservoir :</strong> 16.5 L</li>
+            <li><strong>Selle :</strong> 830 mm</li>
+            <li><strong>Longueur :</strong> 2100 mm</li>
+            <li><strong>largeur :</strong> 745 mm</li>
+            <li><strong>Hauteur :</strong> 1140 mm</li>
+            <li><strong>Roue av/ar :</strong> 120/70-17 200/55-17</li>
+          </ul>
+          <!--<p class="description">Courte description ou avis personnel sur la moto...</p>-->
+        </div>
+      </article>
+
+      <!-- Carte Moto -->
+      <article class="card" data-category="sportive" data-brand="honda">
+        <div class="card-image">
+          <img src="https://live.staticflickr.com/65535/53450043610_882af7552e_b.jpg" alt="Nom de la moto">
+          <span class="badge">Sportive</span>
+        </div>
+        <div class="card-content">
+          <h2>CBR600RR</h2>
+          <p class="brand">Honda — 2026</p>
+          <ul class="specs">
+            <li><strong>Puissance :</strong> 121 ch</li>
+            <li><strong>Puissance :</strong> 89 kW</li>
+            <li><strong>Cylindrée :</strong> 599 cc</li>
+            <li><strong>Couple :</strong> 63 Nm</li>
+            <li><strong>Poids :</strong> 193 kg</li>
+            <li><strong>Rapport Poids/Puissance :</strong> 1.59 kg/ch</li>
+            <li><strong>Moteur :</strong> 4 cylindres en ligne</li>
+            <li><strong>Réservoir :</strong> 18 L</li>
+            <li><strong>Selle :</strong> 820 mm</li>
+            <li><strong>Longueur :</strong> 2030 mm</li>
+            <li><strong>largeur :</strong> 685 mm</li>
+            <li><strong>Hauteur :</strong> 1140 mm</li>
+            <li><strong>Roue av/ar :</strong> 120/70-17 180/55-17</li>
+          </ul>
+          <!--<p class="description">Courte description ou avis personnel sur la moto...</p>-->
+        </div>
+      </article>
+
+      <!-- Carte Moto -->
+      <article class="card" data-category="sportive" data-brand="kawasaki">
+        <div class="card-image">
+          <img src="https://www.kawasaki.fr/content/dam/products/pim/studio/Resource_325568_26ZX1003C_40TGN2DRF3CG_A_v2.jpg/jcr:content/renditions/cq5dam.web.1280.1280.png" alt="Nom de la moto">
+          <span class="badge">Sportive</span>
+        </div>
+        <div class="card-content">
+          <h2>Ninja ZX-10RR</h2>
+          <p class="brand">Kawasaki — 2026</p>
+          <ul class="specs">
+            <li><strong>Puissance :</strong> 197/207 ch</li>
+            <li><strong>Puissance :</strong> 145/152.3 kW</li>
+            <li><strong>Cylindrée :</strong> 998 cc</li>
+            <li><strong>Couple :</strong> 110 Nm</li>
+            <li><strong>Poids :</strong> 207 kg</li>
+            <li><strong>Rapport Poids/Puissance :</strong> 1.05/1 kg/ch</li>
+            <li><strong>Moteur :</strong> 4 cylindres en ligne</li>
+            <li><strong>Réservoir :</strong> 17 L</li>
+            <li><strong>Selle :</strong> 825 mm</li>
+            <li><strong>Longueur :</strong> 2085 mm</li>
+            <li><strong>largeur :</strong> 750 mm</li>
+            <li><strong>Hauteur :</strong> 1180 mm</li>
+            <li><strong>Roue av/ar :</strong> 120/70-17 190/55-17</li>
+          </ul>
+          <!--<p class="description">Courte description ou avis personnel sur la moto...</p>-->
+        </div>
+      </article>
+
+      <!-- Carte Moto -->
+      <article class="card" data-category="sportive" data-brand="kawasaki">
+        <div class="card-image">
+          <img src="https://www.kawasaki.fr/content/dam/products/pim/studio/Resource_324964_26ZX1003A_40TGN1DRF3CG_A.jpg/_jcr_content/renditions/cq5dam.thumbnail.600.600.png" alt="Nom de la moto">
+          <span class="badge">Sportive</span>
+        </div>
+        <div class="card-content">
+          <h2>Ninja ZX-10R</h2>
+          <p class="brand">Kawasaki — 2026</p>
+          <ul class="specs">
+            <li><strong>Puissance :</strong> 196/206 ch</li>
+            <li><strong>Puissance :</strong> 144/151.2 kW</li>
+            <li><strong>Cylindrée :</strong> 998 cc</li>
+            <li><strong>Couple :</strong> 110 Nm</li>
+            <li><strong>Poids :</strong> 209 kg</li>
+            <li><strong>Rapport Poids/Puissance :</strong> 1.06/1.01 kg/ch</li>
+            <li><strong>Moteur :</strong> 4 cylindres en ligne</li>
+            <li><strong>Réservoir :</strong> 17 L</li>
+            <li><strong>Selle :</strong> 825 mm</li>
+            <li><strong>Longueur :</strong> 2085 mm</li>
+            <li><strong>largeur :</strong> 750 mm</li>
+            <li><strong>Hauteur :</strong> 1180 mm</li>
+            <li><strong>Roue av/ar :</strong> 120/70-17 190/55-17</li>
+          </ul>
+          <!--<p class="description">Courte description ou avis personnel sur la moto...</p>-->
+        </div>
+      </article>
+
+      <!-- Carte Moto -->
+      <article class="card" data-category="sportive" data-brand="kawasaki">
+        <div class="card-image">
+          <img src="https://www.kawasaki.fr/content/dam/products/pim/resource/nin/Resource_325664_26MY_Ninja_ZX-6R_Performance_GN1_Front.jpg/_jcr_content/renditions/cq5dam.thumbnail.600.600.png" alt="Nom de la moto">
+          <span class="badge">Sportive</span>
+        </div>
+        <div class="card-content">
+          <h2>Ninja ZX-6R</h2>
+          <p class="brand">Kawasaki — 2026</p>
+          <ul class="specs">
+            <li><strong>Puissance :</strong> 124/129 ch</li>
+            <li><strong>Puissance :</strong> 91/95.2 kW</li>
+            <li><strong>Cylindrée :</strong> 636 cc</li>
+            <li><strong>Couple :</strong> 69 Nm</li>
+            <li><strong>Poids :</strong> 198 kg</li>
+            <li><strong>Rapport Poids/Puissance :</strong> 1.53/1.59 kg/ch</li>
+            <li><strong>Moteur :</strong> 4 cylindres en ligne</li>
+            <li><strong>Réservoir :</strong> 17 L</li>
+            <li><strong>Selle :</strong> 830 mm</li>
+            <li><strong>Longueur :</strong> 2025 mm</li>
+            <li><strong>largeur :</strong> 710 mm</li>
+            <li><strong>Hauteur :</strong> 1105 mm</li>
+            <li><strong>Roue av/ar :</strong> 120/70-17 180/55-17</li>
+          </ul>
+          <!--<p class="description">Courte description ou avis personnel sur la moto...</p>-->
+        </div>
+      </article>
+
+      <!-- Carte Moto -->
+      <article class="card" data-category="sportive" data-brand="suzuki">
+        <div class="card-image">
+          <img src="https://moto.suzuki.fr/wp-content/uploads/module360/GSX-R1000RRRM6/color1/01.jpg" alt="Nom de la moto">
+          <span class="badge">Sportive</span>
+        </div>
+        <div class="card-content">
+          <h2>GSXR1000R</h2>
+          <p class="brand">Suzuki — 2026</p>
+          <ul class="specs">
+            <li><strong>Puissance :</strong> 195 ch</li>
+            <li><strong>Puissance :</strong>  kW</li>
+            <li><strong>Cylindrée :</strong> 999.8 cc</li>
+            <li><strong>Couple :</strong> 110 Nm</li>
+            <li><strong>Poids :</strong> 207 kg</li>
+            <li><strong>Rapport Poids/Puissance :</strong> 1.04 kg/ch</li>
+            <li><strong>Moteur :</strong> 4 cylindres en ligne</li>
+            <li><strong>Réservoir :</strong> 16 L</li>
+            <li><strong>Selle :</strong> 825 mm</li>
+            <li><strong>Longueur :</strong> 2075 mm</li>
+            <li><strong>largeur :</strong> 705 mm</li>
+            <li><strong>Hauteur :</strong> 1145 mm</li>
+            <li><strong>Roue av/ar :</strong> 120/70-17 190/55-17</li>
+          </ul>
+          <!--<p class="description">Courte description ou avis personnel sur la moto...</p>-->
+        </div>
+      </article>
+
+      <!-- Carte Moto -->
+      <article class="card" data-category="sportive" data-brand="yamaha">
+        <div class="card-image">
+          <img src="https://www.yamaha-motor.co.jp/mc/lineup/yzf-r1/img/yzf-r1_color_001_2025_003.jpg" alt="Nom de la moto">
+          <span class="badge">Sportive</span>
+        </div>
+        <div class="card-content">
+          <h2>YZF-R1M</h2>
+          <p class="brand">Yamaha — 2026</p>
+          <ul class="specs">
+            <li><strong>Puissance :</strong> 200 ch</li>
+            <li><strong>Puissance :</strong> 147 kW</li>
+            <li><strong>Cylindrée :</strong> 997 cc</li>
+            <li><strong>Couple :</strong> 113 Nm</li>
+            <li><strong>Poids :</strong> 203 kg</li>
+            <li><strong>Rapport Poids/Puissance :</strong> 1.01 kg/ch</li>
+            <li><strong>Moteur :</strong> 4 cylindres en ligne</li>
+            <li><strong>Réservoir :</strong> 17 L</li>
+            <li><strong>Selle :</strong> 860 mm</li>
+            <li><strong>Longueur :</strong> 2055 mm</li>
+            <li><strong>largeur :</strong> 690 mm</li>
+            <li><strong>Hauteur :</strong> 1165 mm</li>
+            <li><strong>Roue av/ar :</strong> 120/70-17 200/55-17</li>
+          </ul>
+          <!--<p class="description">Courte description ou avis personnel sur la moto...</p>-->
+        </div>
+      </article>
+
+      <!-- Carte Moto -->
+      <article class="card" data-category="sportive" data-brand="yamaha">
+        <div class="card-image">
+          <img src="https://www.yamaha-motor.co.jp/mc/lineup/yzf-r1/img/yzf-r1_price_2026.jpg" alt="Nom de la moto">
+          <span class="badge">Sportive</span>
+        </div>
+        <div class="card-content">
+          <h2>YZF-R1</h2>
+          <p class="brand">Yamaha — 2026</p>
+          <ul class="specs">
+            <li><strong>Puissance :</strong> 200 ch</li>
+            <li><strong>Puissance :</strong> 147 kW</li>
+            <li><strong>Cylindrée :</strong> 997 cc</li>
+            <li><strong>Couple :</strong> 113 Nm</li>
+            <li><strong>Poids :</strong> 201 kg</li>
+            <li><strong>Rapport Poids/Puissance :</strong> 1.005 kg/ch</li>
+            <li><strong>Moteur :</strong> 4 cylindres en ligne</li>
+            <li><strong>Réservoir :</strong> 17 L</li>
+            <li><strong>Selle :</strong> 855 mm</li>
+            <li><strong>Longueur :</strong> 2055 mm</li>
+            <li><strong>largeur :</strong> 690 mm</li>
+            <li><strong>Hauteur :</strong> 1165 mm</li>
+            <li><strong>Roue av/ar :</strong> 120/70-17 190/55-17</li>
+          </ul>
+          <!--<p class="description">Courte description ou avis personnel sur la moto...</p>-->
+        </div>
+      </article>
+
+      <!-- Carte Moto -->
+      <article class="card" data-category="sportive" data-brand="yamaha">
+        <div class="card-image">
+          <img src="https://cdn2.yamaha-motor.eu/prod/product-assets/2026/YZF900R9/2026-Yamaha-YZF900R9-EU-Icon_Blue-360-Degrees-001-03.jpg" alt="Nom de la moto">
+          <span class="badge">Sportive</span>
+        </div>
+        <div class="card-content">
+          <h2>YZF-R9</h2>
+          <p class="brand">Yamaha — 2025</p>
+          <ul class="specs">
+            <li><strong>Puissance :</strong> 119 ch</li>
+            <li><strong>Puissance :</strong> 87.5 kW</li>
+            <li><strong>Cylindrée :</strong> 890 cc</li>
+            <li><strong>Couple :</strong> 93 Nm</li>
+            <li><strong>Poids :</strong> 195 kg</li>
+            <li><strong>Rapport Poids/Puissance :</strong> 1.63 kg/ch</li>
+            <li><strong>Moteur :</strong> 3 cylindres en ligne</li>
+            <li><strong>Réservoir :</strong> 14 L</li>
+            <li><strong>Selle :</strong> 830 mm</li>
+            <li><strong>Longueur :</strong> 2070 mm</li>
+            <li><strong>largeur :</strong> 705 mm</li>
+            <li><strong>Hauteur :</strong> 1180 mm</li>
+            <li><strong>Roue av/ar :</strong> 120/70-17 180/55-17</li>
+          </ul>
+          <!--<p class="description">Courte description ou avis personnel sur la moto...</p>-->
+        </div>
+      </article>
+
+      <!-- Carte Moto -->
+      <article class="card" data-category="sportive" data-brand="yamaha">
+        <div class="card-image">
+          <img src="https://cdn2.yamaha-motor.eu/prod/product-assets/2026/YZF700R7/2026-Yamaha-YZF700R7-EU-Icon_Blue-360-Degrees-001-03.jpg" alt="Nom de la moto">
+          <span class="badge">Sportive</span>
+        </div>
+        <div class="card-content">
+          <h2>YZF-R7</h2>
+          <p class="brand">Yamaha — 2025</p>
+          <ul class="specs">
+            <li><strong>Puissance :</strong> 73.4 ch</li>
+            <li><strong>Puissance :</strong> 54 kW</li>
+            <li><strong>Cylindrée :</strong> 689 cc</li>
+            <li><strong>Couple :</strong> 68 Nm</li>
+            <li><strong>Poids :</strong> 189 kg</li>
+            <li><strong>Rapport Poids/Puissance :</strong> 2.57 kg/ch</li>
+            <li><strong>Moteur :</strong> Bicylindres en ligne</li>
+            <li><strong>Réservoir :</strong> 14 L</li>
+            <li><strong>Selle :</strong> 830 mm</li>
+            <li><strong>Longueur :</strong> 2070 mm</li>
+            <li><strong>largeur :</strong> 725 mm</li>
+            <li><strong>Hauteur :</strong> 1160 mm</li>
+            <li><strong>Roue av/ar :</strong> 120/70-17 180/55-17</li>
+          </ul>
+          <!--<p class="description">Courte description ou avis personnel sur la moto...</p>-->
+        </div>
+      </article>
+
+      <!-- Carte Moto -->
+      <article class="card" data-category="roadster" data-brand="aprilia">
+        <div class="card-image">
+          <img src="https://wlassets.aprilia.com/wlassets/aprilia/master/Range/tuono_v4/family_page/2026/TAB-PDF-Aprilia-Tuono-V4-Factory-900x675-A/original/TAB-PDF-Aprilia-Tuono+V4-Factory-900x675-A.jpg?1773244199119" alt="Nom de la moto">
+          <span class="badge">Roadster</span>
+        </div>
+        <div class="card-content">
+          <h2>Tuono V4</h2>
+          <p class="brand">Aprilia — 2026</p>
+          <ul class="specs">
+            <li><strong>Puissance :</strong> 180 ch</li>
+            <li><strong>Puissance :</strong> 132.4 kW</li>
+            <li><strong>Cylindrée :</strong> 1099 cc</li>
+            <li><strong>Couple :</strong> 121 Nm</li>
+            <li><strong>Poids :</strong> 211 kg</li>
+            <li><strong>Rapport Poids/Puissance :</strong> 1.17 kg/ch</li>
+            <li><strong>Moteur :</strong> 4 cylindres en V à 65°</li>
+            <li><strong>Réservoir :</strong> 18 L</li>
+            <li><strong>Selle :</strong> 836 mm</li>
+            <li><strong>Longueur :</strong> 2070 mm</li>
+            <li><strong>largeur :</strong> 810 mm</li>
+            <li><strong>Hauteur :</strong> ? mm</li>
+            <li><strong>Roue av/ar :</strong> 120/70-17 190/55-17</li>
+          </ul>
+          <!--<p class="description">Courte description ou avis personnel sur la moto...</p>-->
+        </div>
+        </article>
+
+      <!-- Carte Moto -->
+      <article class="card" data-category="roadster" data-brand="aprilia">
+        <div class="card-image">
+          <img src="https://www.motoplanete.com/aprilia/zoom-700px/11772-Tuono-660-Factory-2026-700px.webp" alt="Nom de la moto">
+          <span class="badge">Roadster</span>
+        </div>
+        <div class="card-content">
+          <h2>Tuono 660</h2>
+          <p class="brand">Aprilia — 2026</p>
+          <ul class="specs">
+            <li><strong>Puissance :</strong> 105 ch</li>
+            <li><strong>Puissance :</strong> 77.2 kW</li>
+            <li><strong>Cylindrée :</strong> 659 cc</li>
+            <li><strong>Couple :</strong> 70 Nm</li>
+            <li><strong>Poids :</strong> 181 kg</li>
+            <li><strong>Rapport Poids/Puissance :</strong> 1.72 kg/ch</li>
+            <li><strong>Moteur :</strong> Bicylindres en ligne à 270°</li>
+            <li><strong>Réservoir :</strong> 15 L</li>
+            <li><strong>Selle :</strong> 820 mm</li>
+            <li><strong>Longueur :</strong> 2000 mm</li>
+            <li><strong>largeur :</strong> 810 mm</li>
+            <li><strong>Hauteur :</strong> ? mm</li>
+            <li><strong>Roue av/ar :</strong> 120/70-17 180/55-17</li>
+          </ul>
+          <!--<p class="description">Courte description ou avis personnel sur la moto...</p>-->
+        </div>
+      </article>
+
+      <!-- Carte Moto -->
+      <article class="card" data-category="roadster" data-brand="bmw">
+        <div class="card-image">
+          <img src="https://www.motoplanete.com/bmw/galerie/BMW-R-1300-R/1.webp" alt="Nom de la moto">
+          <span class="badge">Roadster</span>
+        </div>
+        <div class="card-content">
+          <h2>R1300R</h2>
+          <p class="brand">BMW — 2026</p>
+          <ul class="specs">
+            <li><strong>Puissance :</strong> 145 ch</li>
+            <li><strong>Puissance :</strong> 107 kW</li>
+            <li><strong>Cylindrée :</strong> 1300 cc</li>
+            <li><strong>Couple :</strong> 149 Nm</li>
+            <li><strong>Poids :</strong> 239 kg</li>
+            <li><strong>Rapport Poids/Puissance :</strong> 1.64 kg/ch</li>
+            <li><strong>Moteur :</strong> Boxer bicylindre</li>
+            <li><strong>Réservoir :</strong> 16.5 L</li>
+            <li><strong>Selle :</strong> 810 mm</li>
+            <li><strong>Longueur :</strong> 2126 mm</li>
+            <li><strong>largeur :</strong> 864 mm</li>
+            <li><strong>Hauteur :</strong> 1112 mm</li>
+            <li><strong>Roue av/ar :</strong> 120/70-17 190/55-17</li>
+          </ul>
+          <!--<p class="description">Courte description ou avis personnel sur la moto...</p>-->
+        </div>
+      </article>
+
+      <!-- Carte Moto -->
+      <article class="card" data-category="roadster" data-brand="bmw">
+        <div class="card-image">
+          <img src="https://www.motoplanete.com/bmw/galerie/BMW-M-1000-R-2025/17.webp" alt="Nom de la moto">
+          <span class="badge">Roadster</span>
+        </div>
+        <div class="card-content">
+          <h2>M1000R</h2>
+          <p class="brand">BMW — 2026</p>
+          <ul class="specs">
+            <li><strong>Puissance :</strong> 210 ch</li>
+            <li><strong>Puissance :</strong> 154 kW</li>
+            <li><strong>Cylindrée :</strong> 999 cc</li>
+            <li><strong>Couple :</strong> 113 Nm</li>
+            <li><strong>Poids :</strong> 199 kg</li>
+            <li><strong>Rapport Poids/Puissance :</strong> 0.94 kg/ch</li>
+            <li><strong>Moteur :</strong> 4 cylindres en ligne</li>
+            <li><strong>Réservoir :</strong> 16.5 L</li>
+            <li><strong>Selle :</strong> 840 mm</li>
+            <li><strong>Longueur :</strong> 2090 mm</li>
+            <li><strong>largeur :</strong> 812 mm</li>
+            <li><strong>Hauteur :</strong> 1180 mm</li>
+            <li><strong>Roue av/ar :</strong> 120/70-17 200/55-17</li>
+          </ul>
+          <!--<p class="description">Courte description ou avis personnel sur la moto...</p>-->
+        </div>
+      </article>
+
+      <!-- Carte Moto -->
+      <article class="card" data-category="roadster" data-brand="bmw">
+        <div class="card-image">
+          <img src="https://www.motoplanete.com/bmw/galerie/BMW-S-1000-R-2025/1.webp" alt="Nom de la moto">
+          <span class="badge">Roadster</span>
+        </div>
+        <div class="card-content">
+          <h2>S1000R</h2>
+          <p class="brand">BMW — 2026</p>
+          <ul class="specs">
+            <li><strong>Puissance :</strong> 170 ch</li>
+            <li><strong>Puissance :</strong> 125 kW</li>
+            <li><strong>Cylindrée :</strong> 999 cc</li>
+            <li><strong>Couple :</strong> 114 Nm</li>
+            <li><strong>Poids :</strong> 199 kg</li>
+            <li><strong>Rapport Poids/Puissance :</strong> 1.17 kg/ch</li>
+            <li><strong>Moteur :</strong> 4 cylindres en ligne</li>
+            <li><strong>Réservoir :</strong> 17 L</li>
+            <li><strong>Selle :</strong> 830 mm</li>
+            <li><strong>Longueur :</strong> 2085 mm</li>
+            <li><strong>largeur :</strong> 812 mm</li>
+            <li><strong>Hauteur :</strong> 1051 mm</li>
+            <li><strong>Roue av/ar :</strong> 120/70-17 190/55-17</li>
+          </ul>
+          <!--<p class="description">Courte description ou avis personnel sur la moto...</p>-->
+        </div>
+      </article>
+
+      <!-- Carte Moto -->
+      <article class="card" data-category="roadster" data-brand="ducati">
+        <div class="card-image">
+          <img src="https://images.ctfassets.net/x7j9qwvpvr5s/4OASdQa9PjtawSpsRqymat/d79b573bdc4e22dd728fad7e8ef5b7f6/Streetfighter-V4-MY25-360_0019_it.png?w=1920&fm=webp&q=95" alt="Nom de la moto">
+          <span class="badge">Roadster</span>
+        </div>
+        <div class="card-content">
+          <h2>Streetfighter V4</h2>
+          <p class="brand">Ducati — 2026</p>
+          <ul class="specs">
+            <li><strong>Puissance :</strong> 214 ch</li>
+            <li><strong>Puissance :</strong> 157.4 kW</li>
+            <li><strong>Cylindrée :</strong> 1103 cc</li>
+            <li><strong>Couple :</strong> 120 Nm</li>
+            <li><strong>Poids :</strong> 189 kg</li>
+            <li><strong>Rapport Poids/Puissance :</strong> 0.88 kg/ch</li>
+            <li><strong>Moteur :</strong> 4 cylindres en V à 90°</li>
+            <li><strong>Réservoir :</strong> 16 L</li>
+            <li><strong>Selle :</strong> 845 mm</li>
+            <li><strong>Longueur :</strong> 2112 mm</li>
+            <li><strong>largeur :</strong> 888 mm</li>
+            <li><strong>Hauteur :</strong> 1040 mm</li>
+            <li><strong>Roue av/ar :</strong> 120/70-17 200/60-17</li>
+          </ul>
+          <!--<p class="description">Courte description ou avis personnel sur la moto...</p>-->
+        </div>
+      </article>
+
+      <!-- Carte Moto -->
+      <article class="card" data-category="roadster" data-brand="ducati">
+        <div class="card-image">
+          <img src="https://www.motoplanete.com/ducati/galerie/Ducati-890-Streetfighter-V2/3.webp" alt="Nom de la moto">
+          <span class="badge">Roadster</span>
+        </div>
+        <div class="card-content">
+          <h2>Streetfighter V2</h2>
+          <p class="brand">Ducati — 2026</p>
+          <ul class="specs">
+            <li><strong>Puissance :</strong> 120 ch</li>
+            <li><strong>Puissance :</strong> 88 kW</li>
+            <li><strong>Cylindrée :</strong> 890 cc</li>
+            <li><strong>Couple :</strong> 93.3 Nm</li>
+            <li><strong>Poids :</strong> 178 kg</li>
+            <li><strong>Rapport Poids/Puissance :</strong> 1.48 kg/ch</li>
+            <li><strong>Moteur :</strong> Bicylindres en V à 90°</li>
+            <li><strong>Réservoir :</strong> 15 L</li>
+            <li><strong>Selle :</strong> 838 mm</li>
+            <li><strong>Longueur :</strong> ? mm</li>
+            <li><strong>largeur :</strong> ? mm</li>
+            <li><strong>Hauteur :</strong> ? mm</li>
+            <li><strong>Roue av/ar :</strong> 120/70-17 190/55-17</li>
+          </ul>
+          <!--<p class="description">Courte description ou avis personnel sur la moto...</p>-->
+        </div>
+      </article>
+
+      <!-- Carte Moto -->
+      <article class="card" data-category="roadster" data-brand="honda">
+        <div class="card-image">
+          <img src="https://www.motoplanete.com/honda/zoom-700px/10883-CB-1000-Hornet-SP-2025-700px.webp" alt="Nom de la moto">
+          <span class="badge">Roadster</span>
+        </div>
+        <div class="card-content">
+          <h2>CB1000 Hornet SP</h2>
+          <p class="brand">Honda — 2026</p>
+          <ul class="specs">
+            <li><strong>Puissance :</strong> 157 ch</li>
+            <li><strong>Puissance :</strong> 115.6 kW</li>
+            <li><strong>Cylindrée :</strong> 998 cc</li>
+            <li><strong>Couple :</strong> 107 Nm</li>
+            <li><strong>Poids :</strong> 212 kg</li>
+            <li><strong>Rapport Poids/Puissance :</strong> 1.35 kg/ch</li>
+            <li><strong>Moteur :</strong> 4 cylindres en ligne</li>
+            <li><strong>Réservoir :</strong> 17 L</li>
+            <li><strong>Selle :</strong> 809 mm</li>
+            <li><strong>Longueur :</strong> 2140 mm</li>
+            <li><strong>largeur :</strong> 790 mm</li>
+            <li><strong>Hauteur :</strong> 1085 mm</li>
+            <li><strong>Roue av/ar :</strong> 120/70-17 180/55-17</li>
+          </ul>
+          <!--<p class="description">Courte description ou avis personnel sur la moto...</p>-->
+        </div>
+      </article>
+
+      <!-- Carte Moto -->
+      <article class="card" data-category="roadster" data-brand="honda">
+        <div class="card-image">
+          <img src="https://www.motoplanete.com/honda/zoom-700px/11943-CB-1000-Hornet-2026-700px.webp" alt="Nom de la moto">
+          <span class="badge">Roadster</span>
+        </div>
+        <div class="card-content">
+          <h2>CB1000 Hornet</h2>
+          <p class="brand">Honda — 2026</p>
+          <ul class="specs">
+            <li><strong>Puissance :</strong> 152 ch</li>
+            <li><strong>Puissance :</strong> 111.6 kW</li>
+            <li><strong>Cylindrée :</strong> 999 cc</li>
+            <li><strong>Couple :</strong> 104 Nm</li>
+            <li><strong>Poids :</strong> 211 kg</li>
+            <li><strong>Rapport Poids/Puissance :</strong> 1.38 kg/ch</li>
+            <li><strong>Moteur :</strong> 4 cylindres en ligne</li>
+            <li><strong>Réservoir :</strong> 17 L</li>
+            <li><strong>Selle :</strong> 809 mm</li>
+            <li><strong>Longueur :</strong> 2140 mm</li>
+            <li><strong>largeur :</strong> 790 mm</li>
+            <li><strong>Hauteur :</strong> 1085 mm</li>
+            <li><strong>Roue av/ar :</strong> 120/70-17 180/55-17</li>
+          </ul>
+          <!--<p class="description">Courte description ou avis personnel sur la moto...</p>-->
+        </div>
+      </article>
+
+      
+      <!-- Carte Moto -->
+      <article class="card" data-category="roadster" data-brand="honda">
+        <div class="card-image">
+          <img src="https://www.motoplanete.com/honda/galerie/Honda-cb-750-hornet-2025/7.webp" alt="Nom de la moto">
+          <span class="badge">Roadster</span>
+        </div>
+        <div class="card-content">
+          <h2>CB750 Hornet</h2>
+          <p class="brand">Honda — 2026</p>
+          <ul class="specs">
+            <li><strong>Puissance :</strong> 91.8 ch</li>
+            <li><strong>Puissance :</strong> 67.5 kW</li>
+            <li><strong>Cylindrée :</strong> 755 cc</li>
+            <li><strong>Couple :</strong> 75 Nm</li>
+            <li><strong>Poids :</strong> 192 kg</li>
+            <li><strong>Rapport Poids/Puissance :</strong> 2.09 kg/ch</li>
+            <li><strong>Moteur :</strong> Bicylindres en ligne</li>
+            <li><strong>Réservoir :</strong> 15.2 L</li>
+            <li><strong>Selle :</strong> 795 mm</li>
+            <li><strong>Longueur :</strong> 2090 mm</li>
+            <li><strong>largeur :</strong> 780 mm</li>
+            <li><strong>Hauteur :</strong> 1085 mm</li>
+            <li><strong>Roue av/ar :</strong> 120/70-17 160/60-17</li>
+          </ul>
+          <!--<p class="description">Courte description ou avis personnel sur la moto...</p>-->
+        </div>
+      </article>
+
+      <!-- Carte Moto -->
+      <article class="card" data-category="roadster" data-brand="honda">
+        <div class="card-image">
+          <img src="https://live.staticflickr.com/65535/53343201643_5e9649cd91_b.jpg" alt="Nom de la moto">
+          <span class="badge">Roadster</span>
+        </div>
+        <div class="card-content">
+          <h2>CB500 Hornet</h2>
+          <p class="brand">Honda — 2026</p>
+          <ul class="specs">
+            <li><strong>Puissance :</strong> 47.5 ch</li>
+            <li><strong>Puissance :</strong> 35 kW</li>
+            <li><strong>Cylindrée :</strong> 471 cc</li>
+            <li><strong>Couple :</strong> 43 Nm</li>
+            <li><strong>Poids :</strong> 188 kg</li>
+            <li><strong>Rapport Poids/Puissance :</strong> 3.95 kg/ch</li>
+            <li><strong>Moteur :</strong> Bicylindres en ligne</li>
+            <li><strong>Réservoir :</strong> 17.1 L</li>
+            <li><strong>Selle :</strong> 785 mm</li>
+            <li><strong>Longueur :</strong> 2080 mm</li>
+            <li><strong>largeur :</strong> 800 mm</li>
+            <li><strong>Hauteur :</strong> 1060 mm</li>
+            <li><strong>Roue av/ar :</strong> 120/70-17 160/60-17</li>
+          </ul>
+          <!--<p class="description">Courte description ou avis personnel sur la moto...</p>-->
+        </div>
+      </article>
+
+      <!-- Carte Moto -->
+      <article class="card" data-category="roadster" data-brand="kawasaki">
+        <div class="card-image">
+          <img src="https://www.kawasaki.fr/content/dam/products/pim/studio/Resource_323134_26ZR1100G_40TBK1DRF3CG_A.jpg/_jcr_content/renditions/cq5dam.thumbnail.600.600.png" alt="Nom de la moto">
+          <span class="badge">Roadster</span>
+        </div>
+        <div class="card-content">
+          <h2>Z1100 SE</h2>
+          <p class="brand">Kawasaki — 2026</p>
+          <ul class="specs">
+            <li><strong>Puissance :</strong> 136 ch</li>
+            <li><strong>Puissance :</strong> 100 kW</li>
+            <li><strong>Cylindrée :</strong> 1099 cc</li>
+            <li><strong>Couple :</strong> 113 Nm</li>
+            <li><strong>Poids :</strong> 221 kg</li>
+            <li><strong>Rapport Poids/Puissance :</strong> 1.62 kg/ch</li>
+            <li><strong>Moteur :</strong> 4 cylindres en ligne</li>
+            <li><strong>Réservoir :</strong> 17 L</li>
+            <li><strong>Selle :</strong> 815 mm</li>
+            <li><strong>Longueur :</strong> 2055 mm</li>
+            <li><strong>largeur :</strong> 825 mm</li>
+            <li><strong>Hauteur :</strong> 1085 mm</li>
+            <li><strong>Roue av/ar :</strong> 120/70-17 190/50-17</li>
+          </ul>
+          <!--<p class="description">Courte description ou avis personnel sur la moto...</p>-->
+        </div>
+      </article>
+
+      <!-- Carte Moto -->
+      <article class="card" data-category="roadster" data-brand="kawasaki">
+        <div class="card-image">
+          <img src="https://www.kawasaki.fr/content/dam/products/pim/studio/z/Resource_297942_24MY_Z_H2_SE_GY2_STU.jpg/_jcr_content/renditions/cq5dam.thumbnail.600.600.png" alt="Nom de la moto">
+          <span class="badge">Roadster</span>
+        </div>
+        <div class="card-content">
+          <h2>Z H2 SE</h2>
+          <p class="brand">Kawasaki — 2025</p>
+          <ul class="specs">
+            <li><strong>Puissance :</strong> 200 ch</li>
+            <li><strong>Puissance :</strong> 147.1 kW</li>
+            <li><strong>Cylindrée :</strong> 998 cc</li>
+            <li><strong>Couple :</strong> 137 Nm</li>
+            <li><strong>Poids :</strong> 240 kg</li>
+            <li><strong>Rapport Poids/Puissance :</strong> 1.2 kg/ch</li>
+            <li><strong>Moteur :</strong> 4 cylindres en ligne</li>
+            <li><strong>Réservoir :</strong> 19 L</li>
+            <li><strong>Selle :</strong> 830 mm</li>
+            <li><strong>Longueur :</strong> 2085 mm</li>
+            <li><strong>largeur :</strong> 815 mm</li>
+            <li><strong>Hauteur :</strong> 1130 mm</li>
+            <li><strong>Roue av/ar :</strong> 120/70-17 190/55-17</li>
+          </ul>
+          <!--<p class="description">Courte description ou avis personnel sur la moto...</p>-->
+        </div>
+      </article>
+
+      <!-- Carte Moto -->
+      <article class="card" data-category="roadster" data-brand="kawasaki">
+        <div class="card-image">
+          <img src="https://www.kawasaki.fr/content/dam/products/pim/studio/Resource_320211_26ZR900T_40TGY2DRF3CG_A.jpg/_jcr_content/renditions/cq5dam.thumbnail.600.600.png" alt="Nom de la moto">
+          <span class="badge">Roadster</span>
+        </div>
+        <div class="card-content">
+          <h2>Z900 SE</h2>
+          <p class="brand">Kawasaki — 2026</p>
+          <ul class="specs">
+            <li><strong>Puissance :</strong> 124 ch</li>
+            <li><strong>Puissance :</strong> 91 kW</li>
+            <li><strong>Cylindrée :</strong> 948 cc</li>
+            <li><strong>Couple :</strong> 97.4 Nm</li>
+            <li><strong>Poids :</strong> 214 kg</li>
+            <li><strong>Rapport Poids/Puissance :</strong> 1.72 kg/ch</li>
+            <li><strong>Moteur :</strong> 4 cylindres en ligne</li>
+            <li><strong>Réservoir :</strong> 17 L</li>
+            <li><strong>Selle :</strong> 830 mm</li>
+            <li><strong>Longueur :</strong> 2065 mm</li>
+            <li><strong>largeur :</strong> 830 mm</li>
+            <li><strong>Hauteur :</strong> 1110 mm</li>
+            <li><strong>Roue av/ar :</strong> 120/70-17 180/55-17</li>
+          </ul>
+          <!--<p class="description">Courte description ou avis personnel sur la moto...</p>-->
+        </div>
+      </article>
+
+      <!-- Carte Moto -->
+      <article class="card" data-category="roadster" data-brand="suzuki">
+        <div class="card-image">
+          <img src="https://www.motoplanete.com/suzuki/zoom-700px/11560-GSX-S1000-2026-700px.webp" alt="Nom de la moto">
+          <span class="badge">Roadster</span>
+        </div>
+        <div class="card-content">
+          <h2>GSX-S 1000</h2>
+          <p class="brand">Suzuki — 2026</p>
+          <ul class="specs">
+            <li><strong>Puissance :</strong> 152 ch</li>
+            <li><strong>Puissance :</strong> 110 kW</li>
+            <li><strong>Cylindrée :</strong> 999 cc</li>
+            <li><strong>Couple :</strong> 105 Nm</li>
+            <li><strong>Poids :</strong> 214 kg</li>
+            <li><strong>Rapport Poids/Puissance :</strong> 1.4 kg/ch</li>
+            <li><strong>Moteur :</strong> 4 cylindres en ligne</li>
+            <li><strong>Réservoir :</strong> 19 L</li>
+            <li><strong>Selle :</strong> 810 mm</li>
+            <li><strong>Longueur :</strong> 2115 mm</li>
+            <li><strong>largeur :</strong> 810 mm</li>
+            <li><strong>Hauteur :</strong> 1080 mm</li>
+            <li><strong>Roue av/ar :</strong> 120/70-17 190/50-17</li>
+          </ul>
+          <!--<p class="description">Courte description ou avis personnel sur la moto...</p>-->
+        </div>
+      </article>
+
+      <!-- Carte Moto -->
+      <article class="card" data-category="roadster" data-brand="suzuki">
+        <div class="card-image">
+          <img src="https://live.staticflickr.com/65535/52622550147_6bc13b292e_b.jpg" alt="Nom de la moto">
+          <span class="badge">Roadster</span>
+        </div>
+        <div class="card-content">
+          <h2>GSX-S 950</h2>
+          <p class="brand">Suzuki — 2026</p>
+          <ul class="specs">
+            <li><strong>Puissance :</strong> 95 ch</li>
+            <li><strong>Puissance :</strong> 70 kW</li>
+            <li><strong>Cylindrée :</strong> 999 cc</li>
+            <li><strong>Couple :</strong> 94 Nm</li>
+            <li><strong>Poids :</strong> 214 kg</li>
+            <li><strong>Rapport Poids/Puissance :</strong> 2.25 kg/ch</li>
+            <li><strong>Moteur :</strong> 4 cylindres en ligne</li>
+            <li><strong>Réservoir :</strong> 19 L</li>
+            <li><strong>Selle :</strong> 810 mm</li>
+            <li><strong>Longueur :</strong> 2115 mm</li>
+            <li><strong>largeur :</strong> 810 mm</li>
+            <li><strong>Hauteur :</strong> 1080 mm</li>
+            <li><strong>Roue av/ar :</strong> 120/70-17 190/50-17</li>
+          </ul>
+          <!--<p class="description">Courte description ou avis personnel sur la moto...</p>-->
+        </div>
+      </article>
+
+      <!-- Carte Moto -->
+      <article class="card" data-category="roadster" data-brand="suzuki">
+        <div class="card-image">
+          <img src="https://moto.suzuki.fr/wp-content/uploads/module360/KATANA/color1/01.jpg" alt="Nom de la moto">
+          <span class="badge">Roadster</span>
+        </div>
+        <div class="card-content">
+          <h2>Katana</h2>
+          <p class="brand">Suzuki — 2026</p>
+          <ul class="specs">
+            <li><strong>Puissance :</strong> 152 ch</li>
+            <li><strong>Puissance :</strong> 110 kW</li>
+            <li><strong>Cylindrée :</strong> 999 cc</li>
+            <li><strong>Couple :</strong> 105 Nm</li>
+            <li><strong>Poids :</strong> 215 kg</li>
+            <li><strong>Rapport Poids/Puissance :</strong> 1.41 kg/ch</li>
+            <li><strong>Moteur :</strong> 4 cylindres en ligne</li>
+            <li><strong>Réservoir :</strong> 12 L</li>
+            <li><strong>Selle :</strong> 825 mm</li>
+            <li><strong>Longueur :</strong> 2130 mm</li>
+            <li><strong>largeur :</strong> 835 mm</li>
+            <li><strong>Hauteur :</strong> 1110 mm</li>
+            <li><strong>Roue av/ar :</strong> 120/70-17 190/50-17</li>
+          </ul>
+          <!--<p class="description">Courte description ou avis personnel sur la moto...</p>-->
+        </div>
+      </article>
+
+      <!-- Carte Moto -->
+      <article class="card" data-category="roadster" data-brand="yamaha">
+        <div class="card-image">
+          <img src="https://www.yamaha-motor.co.jp/mc/lineup/mt-10/img/mt-10_color_001_2025_003.jpg" alt="Nom de la moto">
+          <span class="badge">Roadster</span>
+        </div>
+        <div class="card-content">
+          <h2>MT-10 SP</h2>
+          <p class="brand">Yamaha — 2025</p>
+          <ul class="specs">
+            <li><strong>Puissance :</strong> 166 ch</li>
+            <li><strong>Puissance :</strong> 122 kW</li>
+            <li><strong>Cylindrée :</strong> 997 cc</li>
+            <li><strong>Couple :</strong> 112 Nm</li>
+            <li><strong>Poids :</strong> 212 kg</li>
+            <li><strong>Rapport Poids/Puissance :</strong> 1.27 kg/ch</li>
+            <li><strong>Moteur :</strong> 4 cylindres en ligne</li>
+            <li><strong>Réservoir :</strong> 17 L</li>
+            <li><strong>Selle :</strong> 835 mm</li>
+            <li><strong>Longueur :</strong> 2100 mm</li>
+            <li><strong>largeur :</strong> 800 mm</li>
+            <li><strong>Hauteur :</strong> 1165 mm</li>
+            <li><strong>Roue av/ar :</strong> 120/70-17 190/55-17</li>
+          </ul>
+          <!--<p class="description">Courte description ou avis personnel sur la moto...</p>-->
+        </div>
+      </article>
+
+      <!-- Carte Moto -->
+      <article class="card" data-category="roadster" data-brand="yamaha">
+        <div class="card-image">
+          <img src="https://cdn2.yamaha-motor.eu/prod/product-assets/2024/MT09DX/2024-Yamaha-MT09DX-EU-Icon_Performance-360-Degrees-001-03.jpg" alt="Nom de la moto">
+          <span class="badge">Roadster</span>
+        </div>
+        <div class="card-content">
+          <h2>MT-09 SP</h2>
+          <p class="brand">Yamaha — 2025</p>
+          <ul class="specs">
+            <li><strong>Puissance :</strong> 119 ch</li>
+            <li><strong>Puissance :</strong> 87.5 kW</li>
+            <li><strong>Cylindrée :</strong> 890 cc</li>
+            <li><strong>Couple :</strong> 93 Nm</li>
+            <li><strong>Poids :</strong> 194 kg</li>
+            <li><strong>Rapport Poids/Puissance :</strong> 1.63 kg/ch</li>
+            <li><strong>Moteur :</strong> 3 cylindres en ligne</li>
+            <li><strong>Réservoir :</strong> 14 L</li>
+            <li><strong>Selle :</strong> 825 mm</li>
+            <li><strong>Longueur :</strong> 2090 mm</li>
+            <li><strong>largeur :</strong> 820 mm</li>
+            <li><strong>Hauteur :</strong> 1145 mm</li>
+            <li><strong>Roue av/ar :</strong> 120/70-17 180/55-17</li>
+          </ul>
+          <!--<p class="description">Courte description ou avis personnel sur la moto...</p>-->
+        </div>
+      </article>
+
+      <!-- Carte Moto -->
+      <article class="card" data-category="roadster" data-brand="yamaha">
+        <div class="card-image">
+          <img src="https://cdn2.yamaha-motor.eu/prod/product-assets/2025/MT07AS/2025-Yamaha-MT07AS-EU-Ice_Storm-360-Degrees-001-03.jpg" alt="Nom de la moto">
+          <span class="badge">Roadster</span>
+        </div>
+        <div class="card-content">
+          <h2>MT-07</h2>
+          <p class="brand">Yamaha — 2025</p>
+          <ul class="specs">
+            <li><strong>Puissance :</strong> 73.4 ch</li>
+            <li><strong>Puissance :</strong> 54 kW</li>
+            <li><strong>Cylindrée :</strong> 689 cc</li>
+            <li><strong>Couple :</strong> 68 Nm</li>
+            <li><strong>Poids :</strong> 194 kg</li>
+            <li><strong>Rapport Poids/Puissance :</strong> 2.49 kg/ch</li>
+            <li><strong>Moteur :</strong> Bicylindres en ligne</li>
+            <li><strong>Réservoir :</strong> 14 L</li>
+            <li><strong>Selle :</strong> 805 mm</li>
+            <li><strong>Longueur :</strong> 2065 mm</li>
+            <li><strong>largeur :</strong> 780 mm</li>
+            <li><strong>Hauteur :</strong> 1110 mm</li>
+            <li><strong>Roue av/ar :</strong> 120/70-17 180/55-17</li>
+          </ul>
+          <!--<p class="description">Courte description ou avis personnel sur la moto...</p>-->
+        </div>
+      </article>
+
+      <!-- Carte Moto -->
+      <article class="card" data-category="adventure" data-brand="aprilia">
+        <div class="card-image">
+          <img src="https://wlassets.aprilia.com/wlassets/aprilia/master/Range/Tuareg/family-page/2025/tab/Aprilia_Tuareg_tab_900x675_Coppia_1/original/Aprilia_Tuareg_tab_900x675_Coppia_1.png?1739360450952" alt="Nom de la moto">
+          <span class="badge">Adventure / Trail</span>
+        </div>
+        <div class="card-content">
+          <h2>Tuareg</h2>
+          <p class="brand">Aprilia — 2025</p>
+          <ul class="specs">
+            <li><strong>Puissance :</strong> 80 ch</li>
+            <li><strong>Puissance :</strong> 59 kW</li>
+            <li><strong>Cylindrée :</strong> 659 cc</li>
+            <li><strong>Couple :</strong> 70 Nm</li>
+            <li><strong>Poids :</strong> 204 kg</li>
+            <li><strong>Rapport Poids/Puissance :</strong> 2.55 kg/ch</li>
+            <li><strong>Moteur :</strong> Bicylindres en ligne</li>
+            <li><strong>Réservoir :</strong> 18 L</li>
+            <li><strong>Selle :</strong> 860 mm</li>
+            <li><strong>Longueur :</strong> 2065 mm</li>
+            <li><strong>largeur :</strong> ? mm</li>
+            <li><strong>Hauteur :</strong> ? mm</li>
+            <li><strong>Roue av/ar :</strong> ? </li>
+          </ul>
+          <!--<p class="description">Courte description ou avis personnel sur la moto...</p>-->
+        </div>
+      </article>
+
+      <!-- Carte Moto -->
+      <article class="card" data-category="adventure" data-brand="bmw">
+        <div class="card-image">
+          <img src="https://live.staticflickr.com/65535/53227254381_2cbc66fbd3_b.jpg" alt="Nom de la moto">
+          <span class="badge">Adventure / Trail</span>
+        </div>
+        <div class="card-content">
+          <h2>R1300GS</h2>
+          <p class="brand">BMW — 2026</p>
+          <ul class="specs">
+            <li><strong>Puissance :</strong> 145 ch</li>
+            <li><strong>Puissance :</strong> 107 kW</li>
+            <li><strong>Cylindrée :</strong> 1300 cc</li>
+            <li><strong>Couple :</strong> 149 Nm</li>
+            <li><strong>Poids :</strong> 237 kg</li>
+            <li><strong>Rapport Poids/Puissance :</strong> 1.63 kg/ch</li>
+            <li><strong>Moteur :</strong> Boxer</li>
+            <li><strong>Réservoir :</strong> 19 L</li>
+            <li><strong>Selle :</strong> 850 mm</li>
+            <li><strong>Longueur :</strong> 2212 mm</li>
+            <li><strong>largeur :</strong> 1000 mm</li>
+            <li><strong>Hauteur :</strong> 1406 mm</li>
+            <li><strong>Roue av/ar :</strong> 120/70-19 170/60-17</li>
+          </ul>
+          <!--<p class="description">Courte description ou avis personnel sur la moto...</p>-->
+        </div>
+      </article>
+
+      <!-- Carte Moto -->
+      <article class="card" data-category="adventure" data-brand="bmw">
+        <div class="card-image">
+          <img src="https://live.staticflickr.com/65535/53566248869_e9de8c4169_b.jpg" alt="Nom de la moto">
+          <span class="badge">Adventure / Trail</span>
+        </div>
+        <div class="card-content">
+          <h2>F900GS</h2>
+          <p class="brand">BMW — 2026</p>
+          <ul class="specs">
+            <li><strong>Puissance :</strong> 105 ch</li>
+            <li><strong>Puissance :</strong> 77 kW</li>
+            <li><strong>Cylindrée :</strong> 895 cc</li>
+            <li><strong>Couple :</strong> 93 Nm</li>
+            <li><strong>Poids :</strong> 219 kg</li>
+            <li><strong>Rapport Poids/Puissance :</strong> 2.08 kg/ch</li>
+            <li><strong>Moteur :</strong> Bicylindre en ligne</li>
+            <li><strong>Réservoir :</strong> 14,5 L</li>
+            <li><strong>Selle :</strong> 870 mm</li>
+            <li><strong>Longueur :</strong> 2270 mm</li>
+            <li><strong>largeur :</strong> 943 mm</li>
+            <li><strong>Hauteur :</strong> 1393 mm</li>
+            <li><strong>Roue av/ar :</strong> 90/90-21 150/70-17</li>
+          </ul>
+          <!--<p class="description">Courte description ou avis personnel sur la moto...</p>-->
+        </div>
+      </article>
+
+      <!-- Carte Moto -->
+      <article class="card" data-category="adventure" data-brand="bmw">
+        <div class="card-image">
+          <img src="https://www.motoplanete.com/bmw/zoom-700px/10653-F-800-GS-2025-700px.webp" alt="Nom de la moto">
+          <span class="badge">Adventure / Trail</span>
+        </div>
+        <div class="card-content">
+          <h2>F800GS</h2>
+          <p class="brand">BMW — 2026</p>
+          <ul class="specs">
+            <li><strong>Puissance :</strong> 87 ch</li>
+            <li><strong>Puissance :</strong> 64 kW</li>
+            <li><strong>Cylindrée :</strong> 895 cc</li>
+            <li><strong>Couple :</strong> 91 Nm</li>
+            <li><strong>Poids :</strong> 227 kg</li>
+            <li><strong>Rapport Poids/Puissance :</strong> 2.60 kg/ch</li>
+            <li><strong>Moteur :</strong> Bicylindre en ligne</li>
+            <li><strong>Réservoir :</strong> 15 L</li>
+            <li><strong>Selle :</strong> 815 mm</li>
+            <li><strong>Longueur :</strong> 2296 mm</li>
+            <li><strong>largeur :</strong> 910 mm</li>
+            <li><strong>Hauteur :</strong> 1225 mm</li>
+            <li><strong>Roue av/ar :</strong> 110/80-19 150/70-17</li>
+          </ul>
+          <!--<p class="description">Courte description ou avis personnel sur la moto...</p>-->
+        </div>
+      </article>
+
+      <!-- Carte Moto -->
+      <article class="card" data-category="adventure" data-brand="ducati">
+        <div class="card-image">
+          <img src="https://live.staticflickr.com/65535/54031018778_41834b4704_b.jpg" alt="Nom de la moto">
+          <span class="badge">Adventure / Trail</span>
+        </div>
+        <div class="card-content">
+          <h2>Multistrada V4</h2>
+          <p class="brand">Ducati — 2026</p>
+          <ul class="specs">
+            <li><strong>Puissance :</strong> 170 ch</li>
+            <li><strong>Puissance :</strong> 125 kW</li>
+            <li><strong>Cylindrée :</strong> 1158 cc</li>
+            <li><strong>Couple :</strong> 124 Nm</li>
+            <li><strong>Poids :</strong> 229 kg</li>
+            <li><strong>Rapport Poids/Puissance :</strong> 1.35 kg/ch</li>
+            <li><strong>Moteur :</strong> V4 à 90°</li>
+            <li><strong>Réservoir :</strong> 22 L</li>
+            <li><strong>Selle :</strong> 840-860 mm</li>
+            <li><strong>Longueur :</strong> ? mm</li>
+            <li><strong>largeur :</strong> ? mm</li>
+            <li><strong>Hauteur :</strong> ? mm</li>
+            <li><strong>Roue av/ar :</strong> 120/70-19 170/60-17</li>
+          </ul>
+          <!--<p class="description">Courte description ou avis personnel sur la moto...</p>-->
+        </div>
+      </article>
+
+      <!-- Carte Moto -->
+      <article class="card" data-category="adventure" data-brand="ducati">
+        <div class="card-image">
+          <img src="https://www.motoplanete.com/ducati/zoom-700px/11829-Multistrada-V2-890-2026-700px.webp" alt="Nom de la moto">
+          <span class="badge">Adventure / Trail</span>
+        </div>
+        <div class="card-content">
+          <h2>Multistrada V2</h2>
+          <p class="brand">Ducati — 2026</p>
+          <ul class="specs">
+            <li><strong>Puissance :</strong> 115 ch</li>
+            <li><strong>Puissance :</strong> 85 kW</li>
+            <li><strong>Cylindrée :</strong> 890 cc</li>
+            <li><strong>Couple :</strong> 92 Nm</li>
+            <li><strong>Poids :</strong> 199 kg</li>
+            <li><strong>Rapport Poids/Puissance :</strong> 1.73 kg/ch</li>
+            <li><strong>Moteur :</strong> V2 à 90°</li>
+            <li><strong>Réservoir :</strong> 19 L</li>
+            <li><strong>Selle :</strong> 830-850 mm</li>
+            <li><strong>Longueur :</strong> ? mm</li>
+            <li><strong>largeur :</strong> ? mm</li>
+            <li><strong>Hauteur :</strong> ? mm</li>
+            <li><strong>Roue av/ar :</strong> 120/70-19 170/60-17</li>
+          </ul>
+          <!--<p class="description">Courte description ou avis personnel sur la moto...</p>-->
+        </div>
+      </article>
+
+      <!-- Carte Moto -->
+      <article class="card" data-category="adventure" data-brand="ducati">
+        <div class="card-image">
+          <img src="https://www.motoplanete.com/ducati/zoom-700px/12060-DesertX-890-2026-1000px_px_1000x1000_.webp" alt="Nom de la moto">
+          <span class="badge">Adventure / Trail</span>
+        </div>
+        <div class="card-content">
+          <h2>DesertX</h2>
+          <p class="brand">Ducati — 2026</p>
+          <ul class="specs">
+            <li><strong>Puissance :</strong> 110 ch</li>
+            <li><strong>Puissance :</strong> 81 kW</li>
+            <li><strong>Cylindrée :</strong> 890 cc</li>
+            <li><strong>Couple :</strong> 92 Nm</li>
+            <li><strong>Poids :</strong> 209 kg</li>
+            <li><strong>Rapport Poids/Puissance :</strong> 1.90 kg/ch</li>
+            <li><strong>Moteur :</strong> V2 à 90°</li>
+            <li><strong>Réservoir :</strong> 18 L</li>
+            <li><strong>Selle :</strong> 880 mm</li>
+            <li><strong>Longueur :</strong> ? mm</li>
+            <li><strong>largeur :</strong> ? mm</li>
+            <li><strong>Hauteur :</strong> ? mm</li>
+            <li><strong>Roue av/ar :</strong> 90/90-21 150/70-18</li>
+          </ul>
+          <!--<p class="description">Courte description ou avis personnel sur la moto...</p>-->
+        </div>
+      </article>
+
+    </section>
+  </main>
+
+  <!-- Pied de page -->
+  <footer>
+    <p>Fan site créé par un passionné — Hébergé sur Vercel</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
